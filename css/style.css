@@ -49,16 +49,27 @@ body {
 }
 
 .navbar {
-  position: relative;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
   display: flex;
   align-items: center;
+  width: 100%;
   height: 94px;
   color: #ffffff;
   border-bottom: 1px solid rgba(235, 235, 240, 0.2);
+  transition: background-color 0.2s ease;
+}
+
+.navbar-light {
+  color: #292d33;
+  background-color: #ffffff;
 }
 
 .header {
   min-height: 100vh;
+  padding-top: 94px;
 }
 
 .header-image {
@@ -150,6 +161,7 @@ body {
   margin: 30px 0;
   font-family: 'Bebas Neue', sans-serif;
   font-size: 80px;
+  font-weight: 400;
   line-height: 1.2;
 }
 
@@ -254,7 +266,7 @@ body {
 .steps-link::before {
   width: 40px;
   height: 1px;
+  margin-right: 20px;
   content: '';
   background-color: #5c8ee5;
-  margin-right: 20px;
 }
