@@ -1,12 +1,12 @@
 const navbar = document.querySelector('.navbar')
-const logoImg = navbar.querySelector('img')
+const logo = document.querySelector('.logo-svg use')
 
 window.addEventListener('scroll', () => {
 	if (window.scrollY > 1) {
 		navbar.classList.add('navbar-light')
-		logoImg.src = 'img/logo-dark.svg'
+		logo.href.baseVal = 'img/sprite.svg#logo'
 	} else {
 		navbar.classList.remove('navbar-light')
-		logoImg.src = 'img/logo-light.svg'
+		logo.href.baseVal = 'img/sprite.svg#logo-light'
 	}
 })
